@@ -18,5 +18,5 @@ const quizSubmissionSchema = new Schema(
 quizSubmissionSchema.index({ student: 1, course: 1 });
 quizSubmissionSchema.index({ student: 1, course: 1, lessonId: 1 });
 
-module.exports = model("QuizSubmission", quizSubmissionSchema);
+module.exports = model("QuizSubmission", quizSubmissionSchema, "quizSubmissions");
 

@@ -17,4 +17,4 @@ const enrollmentSchema = new Schema(
 // prevent duplicate enrollment
 enrollmentSchema.index({ student: 1, course: 1 }, { unique: true });
 
-module.exports = model("Enrollment", enrollmentSchema);
+module.exports = model("Enrollment", enrollmentSchema, "enrollments");

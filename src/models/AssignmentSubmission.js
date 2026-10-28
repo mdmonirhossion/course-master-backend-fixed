@@ -18,4 +18,4 @@ const assignmentSubmissionSchema = new Schema(
   { timestamps: true }
 );
 
-module.exports = model("AssignmentSubmission", assignmentSubmissionSchema);
+module.exports = model("AssignmentSubmission", assignmentSubmissionSchema, "assignmentsubmissions");
