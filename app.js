@@ -48,18 +48,31 @@ app.get("/", (req, res) => {
 
 // mounting auth routes
 app.use("/api/auth", authRoutes);
+app.use("/auth", authRoutes);
+
 // mounting course routes
 app.use("/api/courses", courseRoutes);
+app.use("/courses", courseRoutes);
+
 // mounting admin routes
 app.use("/api/admin", adminRoutes);
+app.use("/admin", adminRoutes);
+
 // mounting enrollment routes
 app.use("/api/enrollments", enrollmentRoutes);
+app.use("/enrollments", enrollmentRoutes);
+
 // mounting assignment routes
 app.use("/api/assignments", assignmentRoutes);
+app.use("/assignments", assignmentRoutes);
+
 // mounting quiz routes
 app.use("/api/quizzes", quizRoutes);
+app.use("/quizzes", quizRoutes);
+
 // mounting user routes
 app.use("/api/users", userRoutes);
+app.use("/users", userRoutes);
 
 
 // 404 handler (unknown routes)
